@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AirBnB</title>
+
+		<link rel="stylesheet" type = "text/css" href="AirBnB.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="PapaParse-4.3.2/papaparse.min.js"></script>
+
+		<script src="PapaParse-4.3.2/papaparse.js"></script>
+
+		<script type="text/javascript" src="AirBnB.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="plotly-latest.min.js"></script>
+
+	</head>
+	<body>
+		<div id="page1">
+			<h1 id="websiteTitle">A i r B n B</h1>
+			<div id="weeklyIncome">
+				<h1 id = "weeklyIncomeTitle">How much can you make with AirBnB?</h1>
+				<h1 id = "weeklyIncomeInputHeader">Enter Location</h1>
+				<div id = "inputs">
+					<input id="latField" type="text" placeholder="latitude" />
+					<p id="inputComma">,</p>
+					<input id="longField" type="text" placeholder="longitude" />
+					<i class="fa fa-chevron-circle-right" id="buttonArrow" onclick="parseCSV()"></i>
+				</div>
+			</div>
+		</div>
+		<div id="page2">
+			<h1 id="websiteTitle">A i r B n B</h1>
+			<h1 id="websiteTitle">Results</h1>
+			<div id="priceEstimation">
+				<h1 id = "priceEstimationTitle"></h1>
+				<h1 id = "priceEstimationDescription"></h1>
+				<h1 id = "priceEstimationResult"></h1>
+			</div>
+			<div id="bookingsOptimization">
+				<h1 id = "bookingsOptimizationTitle"></h1>
+				<h1 id = "bookingsOptimizationDescription"></h1>
+				<h1 id = "bookingsOptimizationResult"></h1>
+			</div>
+		</div>
+		<div id="page3">
+			<div id="graph1">
+			</div>
+			<div id="graph2">
+			</div>
+			<div id="graph3">
+			</div>
+		</div>
+	</body>
+</html>
+
