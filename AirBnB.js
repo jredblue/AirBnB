@@ -226,6 +226,6 @@ function parseData(url, callBack) {
     });
 }
 function parseCSV(){
-	parseData("listings.csv", useData);
+	parseData("https://s3.us-east-2.amazonaws.com/capital-one-summit/listings.csv", useData);
 }
 
